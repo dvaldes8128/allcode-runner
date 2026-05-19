@@ -42,6 +42,8 @@ class VSCode {
 /// Returns the executable name for the given [version].
 String vscodeExecutableFor(VSCodeVersion version) {
   switch (version) {
+    case VSCodeVersion.cursor:
+      return 'cursor';
     case VSCodeVersion.codium:
       return 'codium';
     case VSCodeVersion.insiders:
@@ -56,6 +58,8 @@ String vscodeExecutableFor(VSCodeVersion version) {
 /// This is used to determine which icon will be shown in the search results.
 String vscodeIconNameFor(VSCodeVersion version) {
   switch (version) {
+    case VSCodeVersion.cursor:
+      return 'cursor';
     case VSCodeVersion.codium:
       return 'vscodium';
     case VSCodeVersion.insiders:
